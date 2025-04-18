@@ -6,6 +6,24 @@ __pycache__/
 # C extensions
 *.so
 
+# data-generator
+data-generator/eval/**
+data-generator/test/**
+data-generator/train/**
+# Ignore large files
+data-generator/cscd/data/resource/char_4_gram.bin
+data-generator/cscd/data/lcsts-ime-2m/lcsts-ime-2m.tsv
+data-generator/cscd/data/cscd-ns/all.tsv
+data-generator/cscd/data/cscd-ns/train.tsv
+data-generator/cscd/data/resource/pinyin_distance_matrix.pkl
+data/sighan-15/Tool/sighan15csc.jar
+data/sighan-14/Tool/clp14csc.jar
+evaluation/mmlu/mmlu.zip
+data/sighan-13/EvaluationTool/sighan7csc.jar
+data-generator/cscd/data/cscd-ns/test.tsv
+data-generator/cscd/data/cscd-ns/dev.tsv
+evaluation/ceval/ceval.zip
+evaluation/cmmlu/cmmlu.zip
 # Distribution / packaging
 .Python
 build/
@@ -159,20 +177,19 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 .idea/
 
-# vscode
-.vscode/
-
-# uv
-uv.lock
-
 # custom .gitignore
 ms_cache/
 hf_cache/
-om_cache/
 cache/
 config/
 saves/
 output/
 wandb/
-swanlog/
-generated_predictions.jsonl
+
+models/
+megred-model-path/
+Miniconda3-latest-Linux-x86_64.sh
+data/CSC.json
+data/CSC_converted.json
+
+data-generator/cscd/data/*.json
